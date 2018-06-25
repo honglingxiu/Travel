@@ -7,6 +7,11 @@ import fastClick from '../node_modules/fastclick'
 import './assets/styles/reset.css'
 import './assets/styles/border.css'
 import './assets/styles/fonts/iconfont.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+// require styles
+import 'swiper/dist/css/swiper.css'
+
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
