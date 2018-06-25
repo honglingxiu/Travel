@@ -10,5 +10,5 @@
     }
   }
 </script>
-<style scoped>
+<style lang="stylus" scoped>
 </style>
