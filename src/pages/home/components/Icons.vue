@@ -68,17 +68,15 @@
   @import "~styles/varibles.styl"
   @import "~styles/mixins.styl"
   .icons
-    height :0
-    padding-bottom :50%
+    height :4rem
     .icon
       width :25%
-      height :0
-      padding-bottom :25%
+      height :2rem
       float:left
       box-sizing :border-box
       text-align :center
       .icon-img
-        padding :0.25rem
+        padding :0.24rem
         i
           background-color :$iconColor1
           color:#ffffff
@@ -90,7 +88,7 @@
 
 
     p
-      font-size:.25rem
+      font-size:.22rem
       font-weight :500
       ellipsis()
 
