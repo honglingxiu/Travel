@@ -250,7 +250,6 @@
     },
     mounted(){
        this.scroll = new BScroll(this.$refs.wrapper);
-      console.log(this.scroll);
     }
   }
 </script>
