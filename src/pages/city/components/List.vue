@@ -12,230 +12,18 @@
       <div class="location border-topbottom">
         <p>热门城市</p>
         <div class="city border-topbottom">
-          <div class="city-wrap">
-            <span>北京</span>
-          </div>
-          <div class="city-wrap">
-            <span>北京</span>
-          </div>
-          <div class="city-wrap">
-            <span>北京</span>
-          </div>
-          <div class="city-wrap">
-            <span>北京</span>
-          </div>
-          <div class="city-wrap">
-            <span>北京</span>
-          </div>
-          <div class="city-wrap">
-            <span>北京</span>
+          <div class="city-wrap" v-for="item of hotCities" :key="item.id">
+            <span>{{item.name}}</span>
           </div>
         </div>
       </div>
       <div class="city-list">
-        <p class="border-bottom">A</p>
-        <ul class="content">
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-          <li class="border-bottom">广东</li>
-        </ul>
+        <div class="area" v-for="(item,key) of cities" :key="key" :ref="key">
+          <p class="border-bottom">{{key}}</p>
+          <ul class="content">
+            <li class="border-bottom" v-for="innerItem in item" :key="innerItem.id">{{innerItem.name}}</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -245,11 +33,24 @@
   import BScroll from 'better-scroll'
   export default {
     name: 'CityList',
+    props:{
+      letter:String,
+      hotCities:Array,
+      cities:Object
+    },
     data () {
       return {}
     },
     mounted(){
        this.scroll = new BScroll(this.$refs.wrapper);
+    },
+    watch:{
+      letter(){
+        console.log(this.letter);
+        var element=this.$refs[this.letter];
+        console.log(element);
+        this.scroll.scrollToElement(element[0]);
+      }
     }
   }
 </script>
@@ -290,10 +91,6 @@
               color:$bgColor
               border: .02rem solid $bgColor
     .city-list
-      /*position :absolute
-      width :100%
-      left:0
-      top:3.88rem*/
       p
         padding-left :.2rem
         line-height :.6rem
