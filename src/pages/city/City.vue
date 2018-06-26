@@ -15,7 +15,7 @@
     },
     components:{
       CityHeader,
-      CityList
+      CityList,
     }
   }
 </script>
