@@ -6,9 +6,9 @@
         <input type="text" placeholder="输入城市/景点/游玩主题">
         <i class="iconfont icon-suosou"></i>
       </div>
-      <div class="down">
+      <router-link tag="div" to="./city" class="down">
         <span>三亚</span><i class="iconfont icon-sanjiaoxing-down"></i>
-      </div>
+      </router-link>
     </div>
   </div>
 </template>

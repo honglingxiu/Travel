@@ -1,7 +1,7 @@
 <template>
   <div class="mySwiper">
     <swiper :options="swiperOption" ref="mySwiper">
-      <swiper-slide v-for="item in items">
+      <swiper-slide v-for="(item,index) in items" :key="index">
         <img :src="item">
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
