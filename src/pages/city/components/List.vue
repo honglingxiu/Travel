@@ -46,9 +46,7 @@
     },
     watch:{
       letter(){
-        console.log(this.letter);
         var element=this.$refs[this.letter];
-        console.log(element);
         this.scroll.scrollToElement(element[0]);
       }
     }
