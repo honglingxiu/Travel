@@ -90,7 +90,7 @@
 
 
     p
-      font-size:.25rem
+      font-size:.24rem
       font-weight :500
       ellipsis()
 
