@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="area">
-      <i class="iconfont icon-back"></i>
+      <router-link to="/" tag="i" class="iconfont icon-back"></router-link>
       <p><a href="#" class="actived">境内</a><a href="#">国际/地区</a></p>
     </div>
     <div class="input">

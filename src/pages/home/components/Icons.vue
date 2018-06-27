@@ -80,7 +80,7 @@
       .icon-img
         padding :0.25rem
         i
-          background-color :$iconColor1
+          background-color :rebeccapurple
           color:#ffffff
           display :inline-block
           width :1rem
