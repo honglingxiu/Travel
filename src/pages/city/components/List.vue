@@ -2,10 +2,10 @@
   <div class="list" ref="wrapper">
     <div class="content">
       <div class="location">
-        <p >您的位置</p>
+        <p>您的位置</p>
         <div class="city border-topbottom">
           <div class="city-wrap">
-            <span class="actived">北京</span>
+            <span class="actived">{{this.$store.state.city}}</span>
           </div>
         </div>
       </div>
@@ -13,7 +13,7 @@
         <p>热门城市</p>
         <div class="city border-topbottom">
           <div class="city-wrap" v-for="item of hotCities" :key="item.id">
-            <span>{{item.name}}</span>
+            <span @click="handleCityClick(item.name)">{{item.name}}</span>
           </div>
         </div>
       </div>
@@ -21,7 +21,9 @@
         <div class="area" v-for="(item,key) of cities" :key="key" :ref="key">
           <p class="border-bottom">{{key}}</p>
           <ul class="content">
-            <li class="border-bottom" v-for="innerItem in item" :key="innerItem.id">{{innerItem.name}}</li>
+            <li class="border-bottom"
+                v-for="innerItem in item"
+                :key="innerItem.id" @click="handleCityClick(innerItem.name)">{{innerItem.name}}</li>
           </ul>
         </div>
       </div>
@@ -41,8 +43,16 @@
     data () {
       return {}
     },
+    methods:{
+      handleCityClick(city){
+        this.$store.commit("change",city);
+        this.$router.push("/");
+      }
+    },
     mounted(){
-       this.scroll = new BScroll(this.$refs.wrapper);
+       this.scroll = new BScroll(this.$refs.wrapper,{
+         click: true
+       });
     },
     watch:{
       letter(){

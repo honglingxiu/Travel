@@ -7,17 +7,21 @@
         <i class="iconfont icon-suosou"></i>
       </div>
       <router-link tag="div" to="./city" class="down">
-        <span>三亚</span><i class="iconfont icon-sanjiaoxing-down"></i>
+        <span>{{this.city}}</span><i class="iconfont icon-sanjiaoxing-down"></i>
       </router-link>
     </div>
   </div>
 </template>
 
 <script>
+  import {mapState} from "vuex"
   export default {
     name: 'HomeHeader',
     data () {
       return {}
+    },
+    computed:{
+      ...mapState(["city"])
     }
   }
 </script>

@@ -8,7 +8,7 @@
       <input type="text" v-model="keyword" placeholder="输入城市名或拼音">
       <div class="search-result content" ref="wrapper">
         <ul>
-          <li v-for="(item ,index) in list" :key="index">{{item}}</li>
+          <li v-for="(item ,index) in list" :key="index" @click="handleCityClick(item)">{{item}}</li>
         </ul>
       </div>
       <div class="search-mode" v-show="showMode"></div>
@@ -28,6 +28,12 @@
         keyword:"",
         list:[],
         showMode:false
+      }
+    },
+    methods:{
+      handleCityClick(city){
+        this.$store.dispatch("changeCity",city);
+        this.$router.push("/");
       }
     },
     watch:{
@@ -57,7 +63,7 @@
       }
     },
     mounted(){
-      this.scroll = new BScroll(this.$refs.wrapper);
+      this.scroll = new BScroll(this.$refs.wrapper,{click:true});
     }
   }
 </script>
@@ -112,7 +118,7 @@
         opacity :.5
       .search-result
         width :100%
-        max-height :1rem
+        max-height :2rem
         overflow :hidden
         position :absolute
         left:0

@@ -2,7 +2,7 @@
   <div class="icons">
     <div class="icon">
       <div class="icon-img">
-        <i class="iconfont icon-hotel"></i>
+        <i class="iconfont icon-hotel" @click="change"></i>
       </div>
       <p>酒店</p>
     </div>
@@ -60,6 +60,11 @@
           id:"005",
           className:"455"
         }
+      }
+    },
+    methods:{
+      change(){
+        console.log(12);
       }
     }
   }
