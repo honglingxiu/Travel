@@ -21,14 +21,14 @@
           "http://www.taopic.com/uploads/allimg/140507/240381-14050H2025093.jpg"],
         swiperOption: {
           /*spaceBetween: 30,*/
-         /* centeredSlides: true,*/
+          centeredSlides: true,
           pagination: {
             el: '.swiper-pagination',
             type:"fraction"
           },
           loop:true,
-          /*observeParents: true,
-          observer: true,*/
+          observeParents: true,
+          observer: true,
         }
       }
     },

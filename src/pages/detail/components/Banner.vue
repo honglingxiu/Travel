@@ -1,16 +1,19 @@
 <template>
   <div class="banner" @click="handleShowGallery">
-    <img src="https://qiniu-cdn0.jinxidao.com/group1/M00/1D/39/ooYBAFssXc2AaOjrAANU9GcZwMc731.jpg?imageView2/2/w/600/h/250/interlace/1/q/85" alt="">
+    <img onclick="return false" src="https://qiniu-cdn0.jinxidao.com/group1/M00/1D/39/ooYBAFssXc2AaOjrAANU9GcZwMc731.jpg?imageView2/2/w/600/h/250/interlace/1/q/85" alt="">
     <div class="summary">
       <span class="left">广州长隆野生动物世界门票</span>
       <span class="right"><i class="iconfont icon-tupian"></i>39</span>
     </div>
-    <common-gallery v-if="showGallery" @close="handleShowGalleryClose"></common-gallery>
+    <fade-animation>
+      <common-gallery v-if="showGallery" @close="handleShowGalleryClose"></common-gallery>
+    </fade-animation>
   </div>
 </template>
 
 <script>
   import CommonGallery from "common/gallery/Gallery"
+  import FadeAnimation from "common/fade/FadeAnimation"
   export default {
     name: 'DetailBanner',
     data () {
@@ -27,7 +30,8 @@
       }
     },
     components:{
-      CommonGallery
+      CommonGallery,
+      FadeAnimation
     }
   }
 </script>
