@@ -13,10 +13,7 @@
 <script>
   export default {
     name: 'HomeSwiper',
-    data(pagination = {
-      el: '.swiper-pagination',
-      clickable: true
-    }) {
+    data() {
       return {
         items:["http://pic.58pic.com/58pic/15/63/07/42Q58PIC42U_1024.jpg",
           "http://www.taopic.com/uploads/allimg/140113/267874-1401130T5468.jpg",
@@ -29,7 +26,8 @@
             disableOnInteraction: false
           },
           pagination: {
-            el: '.swiper-pagination'
+            el: '.swiper-pagination',
+            clickable: true
           },
           navigation: {
             nextEl: '.swiper-button-next',
@@ -41,13 +39,13 @@
       }
     },
     computed: {
-      swiper() {
+      /*swiper() {
         return this.$refs.mySwiper.swiper;
-      }
+      }*/
     },
     mounted() {
-      //这边就可以使用swiper这个对象去使用swiper官网中的那些方法
-      this.swiper.slideTo(0, 0, false);
+      /*//这边就可以使用swiper这个对象去使用swiper官网中的那些方法
+      this.swiper.slideTo(0, 0, false);*/
     }
   }
 </script>
